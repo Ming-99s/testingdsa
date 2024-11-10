@@ -245,8 +245,14 @@ header.navbar.scroll{
     h1{
         font-size: 2rem;
     }
+    h1:hover::after{
+        width: 400px;
+    }
 }
 #bottom-text-two{
+    h1:hover::after{
+        width: 290px;
+    }
     #box-img{
         opacity: 0;
         transition: 1s;

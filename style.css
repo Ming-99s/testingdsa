@@ -97,13 +97,13 @@ header.navbar.scroll{
     }
 }
 #container-one{
+    height: 100vh;
     margin-top: -5rem;
     background-image: url(https://www.idri.edu.kh/wp-content/uploads/2024/06/header-background-3.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: -1000;
     #box-text{
         animation: pop 1.5s;
         display: flex;
@@ -145,10 +145,27 @@ header.navbar.scroll{
     }
 }
 #container-two{
+    padding: 2rem 15rem;
+    height: 140vh;
     position: relative;
     margin-top: -4rem;
     background-color: #11284c;
     overflow: hidden;
+    color:white;
+    line-height: 3rem;
+    h1{
+        font-size: 2rem;
+        display: inline;
+    }
+    h1::after{
+        width: 0px ;
+        display: block;
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: rgb(253, 51, 51);
+        transition: 0.5s;
+    }
     #background{
         position: absolute;
         right: 0;
@@ -159,25 +176,8 @@ header.navbar.scroll{
         opacity: 0;
         transform: translateX(-100%);
         transition: all 1.5s;
-        padding: 2rem 15rem;
-        position: absolute;
-        color:white;
-        font-size: 2rem;
-        line-height: 3rem;
-        h1{
-            display: inline;
-        }
         h1:hover::after{
-            width: 200px;
-        }
-        h1::after{
-            width: 0px ;
-            display: block;
-            content: "";
-            position: absolute;
-            height: 2px;
-            background-color: rgb(253, 51, 51);
-            transition: 0.5s;
+            width: 130px;
         }
         p{
             font-size: 1.5rem;
@@ -189,6 +189,28 @@ header.navbar.scroll{
         }
         #margin-text{
             margin-top: 1rem;
+        }
+    }
+    .text-side.visible{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#img-side{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    .img{
+        opacity: 0;
+        transform: translateX(-200%);
+        transition: 1s;
+        p{
+            font-weight: bold;
+            text-align: center;
+            margin: 1rem;
+            font-size: 1.5rem;
         }
     }
     .visible{
@@ -206,6 +228,7 @@ header.navbar.scroll{
         transform: translateX(0);
     }
 }
+
 @keyframes pop{
     0%{
         opacity: 0;
@@ -217,8 +240,26 @@ header.navbar.scroll{
     }
 }
 
-section {
-    height: 100vh;
+#bottom-text{
+    color:white;
+    h1{
+        font-size: 2rem;
+    }
+}
+#bottom-text-two{
+    #box-img{
+        opacity: 0;
+        transition: 1s;
+        scale: 0;
+        img{
+            width: 100%;
+        }
+    }
+    #box-img.visible{
+        opacity: 1;
+        scale: 1;
+    }
+    
 }
 
 

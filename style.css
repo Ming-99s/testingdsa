@@ -266,6 +266,19 @@ header.navbar.scroll{
     }
     
 }
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    .cadtLogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+}
+}
 
 .footer {
     background-color: #11284c;

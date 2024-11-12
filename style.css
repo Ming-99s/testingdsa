@@ -272,12 +272,16 @@ header.navbar.scroll{
     justify-content: center;
     text-align: center;
     gap: 20px;
+    margin-top: 1rem;
+    .headerText {
+        color: rgb(253, 51, 51);
+    }
     .cadtLogo {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 200px;
-}
+    }
 }
 
 .footer {

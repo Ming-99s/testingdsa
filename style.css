@@ -373,10 +373,9 @@ header.navbar.scroll{
         width: 150px;
         flex-grow: 1;
         a {
-            display: flex; 
-            flex-direction: column;
-            color: white;
+            display: inline; 
             text-decoration: none;
+            color: white;
             font-size: 1.2rem;
             transition: 0.3s;
             line-height: 30px;
@@ -389,9 +388,6 @@ header.navbar.scroll{
         }
         div{
             line-height: 30px;
-            a{
-                display: inline;
-            }
         }
         p {
             color: white;
@@ -404,6 +400,15 @@ header.navbar.scroll{
         padding: 0 0 20px;
     }
 }
+.logoNText div .email {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logoNText div .email a {
+    display: inline;
+}
+
 .copyright {
     padding: 2rem 15rem;
     width: 100%;

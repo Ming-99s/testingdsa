@@ -403,7 +403,7 @@ header.navbar.scroll{
 .logoNText div .email {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 4.5px;
 }
 .logoNText div .email a {
     display: inline;
